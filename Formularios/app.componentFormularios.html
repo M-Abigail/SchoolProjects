@@ -1,0 +1,36 @@
+<!--<ul>
+    <li *ngFor="let texto of textos">
+      {{ texto | camelCaseS1 }}
+    </li>
+  </ul>
+
+<router-outlet />-->
+
+<form (ngSubmit)="iniciarSesion()" #loginForm="ngForm">
+  <h2>Iniciar Sesión</h2>
+
+  <div>
+    <label for="id">ID del estudiante:</label>
+    <input
+      type="text"
+      id="id"
+      name="id"
+      [(ngModel)]="usuario.id"
+      required
+    />
+  </div>
+
+  <div>
+    <label for="contrasena">Contraseña:</label>
+    <input
+      type="password"
+      id="contrasena"
+      name="contrasena"
+      [(ngModel)]="usuario.contrasena"
+      required
+    />
+  </div>
+
+  <button type="submit">Entrar</button>
+</form>
+
