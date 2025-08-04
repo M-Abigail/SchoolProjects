@@ -1,0 +1,26 @@
+<!--<p>dashboard works!</p>
+<h2>Bienvenido, {{ userData?.username || 'Usuario' }}</h2>
+
+<div *ngIf="userData">
+  <p><strong>ID:</strong> {{ userData.tarjeta }}</p>
+  <p><strong>Email:</strong> {{ userData.mail }}</p>
+  <p><strong>Nombre:</strong> {{ userData.nombre }}</p>
+</div>-->
+
+<div class="dashboard-container" *ngIf="userData">
+  <h2>Bienvenido {{ userData?.nombre || 'Usuario' }}</h2>
+
+  <div class="user-info">
+    <p><strong>Tarjeta:</strong> {{ userData.tarjeta }}</p>
+    <p><strong>Email:</strong> {{ userData.mail }}</p>
+    <p><strong>Nombre:</strong> {{ userData.nombre }}</p>
+    <p><strong>Apellido:</strong> {{ userData.apellido }}</p>
+    <p><strong>Telefono:</strong> {{ userData.telefono }}</p>
+    <p><strong>Activo:</strong> {{ userData.activo }}</p>
+  </div>
+
+  <button class="actualizar-button" (click)="irActualizar()">Actualizar datos</button>
+  <div *ngIf="error" style="color: red; margin-bottom: 10px;">
+    {{ error }}
+    </div>
+</div>

@@ -1,0 +1,27 @@
+<!--<p>actualizar works!</p>-->
+
+<div class="dashboard-container" *ngIf="userData">
+  <h2>Actualizar Datos</h2>
+
+  <div class="user-info">
+    <label>Nombre:</label>
+    <input [(ngModel)]="userData.nombre" type="text" />
+
+    <label>Apellido:</label>
+    <input [(ngModel)]="userData.apellido" type="text" />
+
+    <label>Email:</label>
+    <input [(ngModel)]="userData.mail" type="email" />
+
+    <label>Telefono:</label>
+    <input [(ngModel)]="userData.telefono" type="text" />
+
+    <!--<label>Contrasena:</label>
+    <input [(ngModel)]="userData.contrasena" type="text" />-->
+
+    <button class="actualizar-button" (click)="actualizar()">Guardar cambios</button>
+    
+  </div>
+  
+</div>
+

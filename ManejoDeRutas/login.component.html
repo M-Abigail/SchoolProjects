@@ -1,0 +1,19 @@
+<!--<p>login works!</p>-->
+
+<form (ngSubmit)="login()" #loginForm="ngForm">
+  <label>
+    Usuario:
+    <input name="username" [(ngModel)]="username" required>
+  </label>
+  <br>
+  <label>
+    Contraseña:
+    <input name="password" [(ngModel)]="password" type="password" required>
+  </label>
+  <br>
+  <button type="submit" [disabled]="!loginForm.valid">Iniciar sesión</button>
+  <div *ngIf="error" style="color: red; margin-bottom: 10px;">
+    {{ error }}
+    </div>
+</form>
+

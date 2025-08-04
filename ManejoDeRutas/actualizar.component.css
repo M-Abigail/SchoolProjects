@@ -1,0 +1,47 @@
+.dashboard-container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 2rem;
+  background-color: #fff5f5; /* fondo muy suave con tinte rojo */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(229, 57, 53, 0.2); /* sombra roja suave */
+  border-left: 6px solid #e53935;
+}
+
+.dashboard-container h2 {
+  text-align: center;
+  color: #e53935;
+  margin-bottom: 1.5rem;
+}
+
+.user-info {
+  padding: 1rem 1.5rem;
+  background-color: #ffeaea;
+  border: 1px solid #ffcdd2;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.user-info p {
+  margin: 0.5rem 0;
+}
+
+.actualizar-button {
+  display: block;
+  margin: 2rem auto 0;
+  padding: 0.75rem 2rem;
+  background-color: #e53935;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #c62828;
+}
